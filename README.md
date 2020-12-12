@@ -1,65 +1,66 @@
-# Application console de caisse
-application de gestion de caisse en java
-# Comment l'utilise
-après avoir exécuté l'application, une liste de commandes apparaîtra avec leur description
+# Cashbox console application
+cash management application in java
+
+# How to use it
+after running the application, a list of commands will appear with their description
 
 ![](/images/cap1.gif)
 
-pour quitter le programme taper **exit** 
+to quit the program type **exit** 
 
-### les autres commandes :
+### Other commands :
 
-#### Gestion de stoke 
-* Afficher tous les articles : art all 
-* Afficher un article : art show       
-* Ajouter un article : art add
-* Supprimer un article : art delete    
+#### Stoke management 
+* Show all articles : art all 
+* Show one article : art show       
+* Add an article : art add
+* Delete an article : art delete    
 
-#### Gestion des commandes     
+#### Orders management     
 
-* Afficher tous les commandes: cart all
-* Ajouter une commande : cart add      
-* Recevoire le cash : get cash
+* Show all orders: cart all
+* Add an order : cart add      
+* Get cash : get cash
 
-#### Historique des commandes  
+#### Orders history 
 
-* historique : hs all
+* Orders history : hs all
 
 ![](/images/cap2.gif)
 
-# Construction d'application
-pour créer cette application on a utiliser maven pour gérer les biblioteque comme :
+# How it's made
+To create this application we've use maven to manage the application's dependencies like:
 
-* Java JDBC (connexion à db)
-* de.vandermeer (affichage des tableaux)
-* toutes les bibliothèques sont enregistrées dans le fichier pom.xml
+* Java JDBC (connection to DB)
+* de.vandermeer (to display the tables)
+* all dependencies are saved in the pom.xml file
 
-## structure de projet :
+## Project structure :
 
 ![](/images/cap2.png)
 
-* la class **App** pour démarrer l'application
-* la class **DB_connection** pour connecter à la bd
-* la class **CommnadHandler** pour pour exécuter les commandes tapées
+* the **App** class to start the application
+* the **DB_connection** class to connect to the DB
+* the **CommnadHandler** class to execute the typed commands
 
 ![](/images/cap3.png)
 
-dans la classe CommandHandler, chaque commande est comparée dans une instruction switch pour exécuter sa fonction équivalente:
+In the CommandHandler class, each command is compared in a switch statement to perform its equivalent method:
 
 ![](/images/cap4.png)
 
-les méthodes sont déclarées dans le dossier **controllers** par exemple la méthode **create** dans la class **ArticlesController**
+The methods are declared in the **controllers** folder for example the **create** method in the **ArticlesController** class
 
 ![](/images/cap5.png)
 
-la méthode **create** appelle un objet Article depuis le dossier **models**, lit les données de la console puis imprime le résultat
+The **create** method calls an Article object from the **models** folder, reads the data from the console and then prints the result
 
-### la class **Aricle** :
+### The **Aricle** class :
 
 ![](/images/cap6.png)
 
-# Commentaires ou problèmes:
-Nous apprécions vraiment vos commentaires. Si vous souhaitez voir des améliorations dans l'application, vous pouvez envoyer un e-mail aux :
+# Comments or issues:
+We really appreciate your feedback. If you want to see any improvements in the app, you can send an email to:
 
 * akramchawki01@gmail.com
 * zakaria.lagouader@gmail.com
