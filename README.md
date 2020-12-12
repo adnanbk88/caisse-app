@@ -15,13 +15,13 @@ pour quitter le programme taper **exit**
 * Ajouter un article : art add
 * Supprimer un article : art delete    
 
-#### Gestion des commondes     
+#### Gestion des commandes     
 
-* Afficher tous les commondes: cart all
-* Ajouter une commonde : cart add      
+* Afficher tous les commandes: cart all
+* Ajouter une commande : cart add      
 * Recevoire le cash : get cash
 
-#### Historique des commondes  
+#### Historique des commandes  
 
 * historique : hs all
 
